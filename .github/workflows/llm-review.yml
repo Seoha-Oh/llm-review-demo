@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   review:
-    uses: seoha8952/llm-code-review/.github/workflows/review.yml@v1
+    uses: Seoha-Oh/llm-code-review/.github/workflows/review.yml@v1
     secrets: inherit
     with:
       base_branch: main
