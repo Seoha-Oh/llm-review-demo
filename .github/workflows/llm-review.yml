@@ -1,0 +1,17 @@
+name: LLM Code Review
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
+
+jobs:
+  review:
+    uses: seoha8952/llm-code-review/.github/workflows/review.yml@v1
+    secrets: inherit
+    with:
+      base_branch: main
+      model: o4-mini
