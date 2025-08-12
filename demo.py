@@ -1,10 +1,15 @@
-cache = {}
+cache = {} 
 
-def bad_default(values=[]):  
+def bad_default(values=[]):
     values.append(1)
     return values
 
-def may_raise(d):
-    f = open("data.txt", "w")
-    f.write(str(d["x"]))
-    return True
+
+def save_user(data, path="data.txt"):
+
+    f = open(path, "w")               
+    f.write(str(data["name"]))        
+    return True                       
+
+def compute_ratio(a, b):
+    return a / b
