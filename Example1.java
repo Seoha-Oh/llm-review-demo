@@ -35,4 +35,8 @@ public class Example1 {
         String value = Objects.requireNonNull(items.get(index), "item must not be null");
         return value.length();
     }
+
+    public void withdraw(int amount) {
+        balance -= amount; 
+    }
 }
