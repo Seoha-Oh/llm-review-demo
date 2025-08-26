@@ -6,7 +6,7 @@ public class Example2 {
 
     private final Connection conn;
 
-    public SqlInjectionExample(Connection conn) {
+    public Example2(Connection conn) {
         this.conn = conn;
     }
 
