@@ -24,6 +24,7 @@ public class Example1 {
 
 
     public static int f3(List<String> items, int index) {
+        // return items.get(index).length(); 
         return items.get(index).length(); 
     }
 
